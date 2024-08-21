@@ -15,29 +15,40 @@ header {
     background-color: var(--primary-color);
     padding: 16px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border-bottom: 2px solid black; /* Black border on the bottom of the header */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    border-bottom: 2px solid black;
     width: 100%;
     box-sizing: border-box;
+    position: relative; /* Establish a containing block for absolute positioning */
 }
 
 .Header-style {
     display: flex;
+    flex-direction: row; /* Align items horizontally */
     align-items: center;
-    margin-bottom: 10px;
+    width: 100%; /* Ensure it takes up the full width */
+    max-width: 1200px; /* Adjust to match your design if needed */
+    margin-bottom: 10px; /* Space below the header */
+    position: relative; /* Relative positioning to control the placement of child elements */
 }
+
 
 .Header-style img.Profile-Icon {
     max-width: 70px;
-    margin-right: 10px; /* Space between image and text */
+    position: absolute; /* Take the image out of the normal document flow */
+    left: 16px; /* Adjust this value if needed to ensure it's aligned properly */
 }
+
+
 
 .Header-style h1 {
     font-size: 1em;
     text-align: center;
+    flex-grow: 1; /* Allow it to take up remaining space */
+    margin-left: 90px; /* Add left margin to make room for the image */
 }
+
 
 nav {
     display: flex;
