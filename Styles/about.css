@@ -1,0 +1,21 @@
+header {
+    background-color: var(--primary-color);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid black;
+    width: 100%; /* Ensures the header spans the full width */
+    box-sizing: border-box; /* Includes padding and border in the element's width */
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 0; /* Remove default body padding */
+}
+
+footer {
+    margin-top: 10px;
+}
