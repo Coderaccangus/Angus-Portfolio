@@ -30,13 +30,12 @@ header {
 }
 
 .Header-style img.Profile-Icon {
-    max-width: 90px;
+    max-width: 70px;
     margin-right: 10px; /* Space between image and text */
 }
 
 .Header-style h1 {
-    font-size: 32px;
-    margin: 0; /* Remove default margin */
+    font-size: 1em;
     text-align: center;
 }
 
@@ -48,8 +47,17 @@ nav {
 }
 
 nav a {
+    background-color: var(--secondary-color);
+    border: solid black;
+    border-radius: 10px;
+    padding: 5px;
     text-decoration: none;
-    color: black;
+    color: white; /* Text color */
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000; /* Creates a black border effect */
     font-size: 20px;
 }
 
@@ -70,11 +78,12 @@ nav a {
     margin: auto;
 }
 
+
 .main-body .article-parent {
     background-color: var(--primary-color);
     border: solid black;
     border-radius: 10px;
-    margin-top: 10px;
+    margin-top: 5%;
     max-width: 600px;
 }
 
@@ -85,15 +94,6 @@ nav a {
     justify-content: center;
     border-radius: 10px;
     padding: 5px;
-}
-
-
-.Contact-btm-parent {
-    background-color: var(--primary-color);
-    border: solid black;
-    border-radius: 10px;
-    margin-top: 10px;
-    max-width: 600px;  
 }
 
 .Contact-btm-parent {
@@ -128,7 +128,7 @@ nav a {
         -1px  1px 0 #000,
          1px  1px 0 #000; /* Creates a black border effect */
     font-size: 16px; /* Adjusts the font size */
-    text-decoration: none; Removes the underline
+    text-decoration: none;
 }
 
 
@@ -136,13 +136,14 @@ nav a {
 .main-body h1 {
     text-align: center;     /* Center text horizontally */
     font-size: 32px;        /* Adjust font size as needed */
-    margin: 0;              
+    margin-top: 15px;              
     padding: 5px;
 }
 
 .main-body p {
     font-size: 15px;
     margin-top: 8px;
+    margin-bottom: 0px;
 
 }
 
@@ -158,6 +159,9 @@ nav a {
          1px  1px 0 #000; /* Creates a black border effect */
 }
 
+.main-body .article-parent:first-of-type{
+    margin-top: 12px;
+}
 
 
 
