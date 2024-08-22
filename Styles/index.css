@@ -3,6 +3,7 @@
     --primary-color: #428F96;
     --secondary-color: #90BBBF;
     font-family: Arial, sans-serif; /* Adding a default font */
+    
 }
 
 body {
@@ -20,6 +21,7 @@ header {
     border-bottom: 2px solid black; /* Black border on the bottom of the header */
     width: 100%;
     box-sizing: border-box;
+
 }
 
 .Header-style {
@@ -53,17 +55,19 @@ nav {
 nav a {
     background-color: var(--secondary-color);
     border: solid black;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 5px;
-    text-decoration: none;
-    color: white; /* Text color */
-    text-shadow: 
-        -1px -1px 0 #000,  
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000; /* Creates a black border effect */
+    color: #0f191a
     font-size: 20px;
+    font-weight: bold;
+    
+        
 }
+
+nav a:link, nav a:visited {
+    text-decoration: none;
+    color:#0f191a;
+  }
 
 .main-body {
     background-color: var(--background-color);
@@ -110,6 +114,7 @@ nav a {
     max-width: 600px;  
     padding: 5px;
     margin-bottom: 10px;
+
 }
 
 .Contact-btm-child {
@@ -124,15 +129,14 @@ nav a {
 
 .Contact-btm-child a {
     text-align: center;
-    color: white; /* Text color */
-    text-shadow: 
-        -1px -1px 0 #000,  
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000; /* Creates a black border effect */
-    font-size: 16px; /* Adjusts the font size */
+    color: #0f191a
     text-decoration: none;
 }
+
+.Contact-btm-child a:link, .Contact-btm-child a:visited {
+    text-decoration: none;
+    color:#0f191a;
+  }
 
 .main-body h1 {
     text-align: center;     /* Center text horizontally */
@@ -150,12 +154,7 @@ nav a {
 .main-body .article-parent h3 {
     text-align: center;
     margin: 7px;
-    color: white; /* Text color */
-    text-shadow: 
-        -1px -1px 0 #000,  
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000; /* Creates a black border effect */
+    color: #0f191a
 }
 
 .main-body .article-parent:first-of-type {
@@ -196,3 +195,7 @@ footer {
 .info img {
     width: 10px;
 }
+
+a:link, a:visited {
+    text-decoration: none;
+  }
