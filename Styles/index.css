@@ -37,7 +37,7 @@ header {
 }
 
 .Header-style h1 {
-    font-size: 3em; /* Consider adjusting if it's too small */
+    font-size: 3em; /* Might adjust if too small */
     text-align: center; /* Center text within the container */
     flex-grow: 1; /* Allow it to take up remaining space */
     margin-left: 0px; /* Adjust as needed for the image */
