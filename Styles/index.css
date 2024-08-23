@@ -12,37 +12,20 @@ body {
     padding: 0;
 }
 
-header {
+.Header-style {
     background-color: var(--primary-color);
-    padding: 16px;
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
+    padding: 0px;
     border-bottom: 2px solid black; /* Black border on the bottom of the header */
     width: 100%;
     box-sizing: border-box;
 
 }
 
-.Header-style {
-    display: flex;
-    align-items: center;
-    width: 100%; /* Ensure it takes up the full width */
-    max-width: 1200px; 
-    margin-bottom: 10px; /* Space below the header */
-}
-
-.Header-style img.Profile-Icon {
-    max-width: 70px;
-    margin-right: 10px; /* Space between image and text */
-    
-}
 
 .Header-style h1 {
     font-size: 3em; /* Might adjust if too small */
     text-align: center; /* Center text within the container */
-    flex-grow: 1; /* Allow it to take up remaining space */
-    margin-left: 0px; /* Adjust as needed for the image */
+    margin 0px; 
 }
 
 nav {
@@ -57,7 +40,7 @@ nav a {
     border: solid black;
     border-radius: 15px;
     padding: 5px;
-    color: #0f191a
+    color: #0f191a;
     font-size: 20px;
     font-weight: bold;
     
@@ -92,6 +75,8 @@ nav a:link, nav a:visited {
     border-radius: 10px;
     margin-top: 5%;
     max-width: 600px;
+
+
 }
 
 .main-body .article-child {
@@ -115,7 +100,30 @@ nav a:link, nav a:visited {
     padding: 5px;
     margin-bottom: 10px;
 
+    transition: box-shadow 0.5s ease;
+    -webkit-transition: box-shadow 0.5s ease; /* For older webkit browsers */
+    -moz-transition: box-shadow 0.5s ease; /* For older Firefox browsers */
+
 }
+
+.Contact-btm-parent .Contact-btm-child:hover {
+    font-weight: bold;
+    border-radius: 0;
+
+}
+
+.Contact-btm-parent:hover {
+    border-radius: 0;  
+}
+
+
+.navigation :hover {
+
+    box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.18);
+    -webkit-box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.18);
+    -moz-box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.18);
+}
+
 
 .Contact-btm-child {
     display: flex; 
@@ -129,7 +137,7 @@ nav a:link, nav a:visited {
 
 .Contact-btm-child a {
     text-align: center;
-    color: #0f191a
+    color: #0f191a;
     text-decoration: none;
 }
 
@@ -199,3 +207,5 @@ footer {
 a:link, a:visited {
     text-decoration: none;
   }
+
+

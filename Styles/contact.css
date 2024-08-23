@@ -1,20 +1,3 @@
-header {
-    background-color: var(--primary-color);
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border-bottom: 2px solid black;
-    width: 100%; /* Ensures the header spans the full width */
-    box-sizing: border-box; /* Includes padding and border in the element's width */
-}
-
-body {
-    min-height: 100vh;
-    padding: 0; /* Remove default body padding */
-}
-
 .article-parent .article-child textarea {
     padding: 0;
     min-height: 300px;
@@ -24,7 +7,6 @@ body {
     background-color: var(--secondary-color);
     border: none;
     outline-width: 0;
-  
 }
 
 
@@ -35,10 +17,7 @@ body {
     background-color: var(--secondary-color);
     border: none;
     outline-width: 0;
-
-
-
-  
+ 
 }
 
 .article-parent:last-of-type {
@@ -69,6 +48,7 @@ body {
     max-width: 600px;  
     padding: 5px;
 
+
 }
 
 .Submit-btm-child {
@@ -85,4 +65,15 @@ body {
     text-align: center;
     color: #0f191a
 
+}
+
+
+.Submit-btm-parent .Submit-btm-child:hover {
+
+    font-weight: bold;
+    border-radius: 0;
+}
+
+.Submit-btm-parent:hover {
+    border-radius: 0;
 }
