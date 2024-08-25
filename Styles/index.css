@@ -33,6 +33,7 @@ nav {
     justify-content: space-around; /* Distribute space between nav items */
     width: 100%;
     margin: 10px 0; /* Space around the nav */
+    
 }
 
 nav a {
@@ -43,8 +44,9 @@ nav a {
     color: #0f191a;
     font-size: 20px;
     font-weight: bold;
+    max-height: 24px;
     
-        
+       
 }
 
 nav a:link, nav a:visited {
@@ -89,7 +91,6 @@ nav a:link, nav a:visited {
 }
 
 .Contact-btm-parent {
-    display: flex;
     justify-content: center; /* Centers the child horizontally */
     align-items: center; 
     background-color: var(--primary-color);
@@ -109,6 +110,7 @@ nav a:link, nav a:visited {
 .Contact-btm-parent .Contact-btm-child:hover {
     font-weight: bold;
     border-radius: 0;
+    
 
 }
 
@@ -117,7 +119,7 @@ nav a:link, nav a:visited {
 }
 
 
-.navigation :hover {
+.navigation :hover { /* light box shadow effect */
 
     box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.18);
     -webkit-box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.18);
@@ -133,6 +135,8 @@ nav a:link, nav a:visited {
     border: solid black;
     border-radius: 10px;
     padding: 5px;
+
+
 }
 
 .Contact-btm-child a {
@@ -206,6 +210,20 @@ footer {
 
 a:link, a:visited {
     text-decoration: none;
-  }
 
+}
 
+@media screen and (min-width: 576px) {
+    header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        margin: 0 15vw;
+    }
+ }
